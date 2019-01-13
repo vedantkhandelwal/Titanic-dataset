@@ -31,6 +31,9 @@ sum(is.na(dataset$Parch))
 dim(dataset)#now dataset has 714 rows and 12 attributes
 #Removal of useless attributes
 dataset=dataset[,c(2,3,5,6,7,8,10)]
+#Correlation between variables
+library(GGally)
+ggcorr(dataset,label = TRUE)
 
 #Make Sex,Pclass and Survived as factors
 dataset$Sex <-  factor (dataset$Sex,
