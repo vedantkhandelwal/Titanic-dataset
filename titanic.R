@@ -15,6 +15,7 @@ sum(is.na(dataset$Sex))
 sum(is.na(dataset$Age))#the age attribute has 177 missing values
 sum(is.na(dataset$SibSp))
 sum(is.na(dataset$Parch))
+sum(is.na(dataset$Fare))
 
 #Removal of NULL OR Missing values
 dataset <- na.omit(dataset)
@@ -28,6 +29,7 @@ sum(is.na(dataset$Sex))
 sum(is.na(dataset$Age))
 sum(is.na(dataset$SibSp))
 sum(is.na(dataset$Parch))
+sum(is.na(dataset$Fare))
 dim(dataset)#now dataset has 714 rows and 12 attributes
 #Removal of useless attributes
 dataset=dataset[,c(2,3,5,6,7,8,10)]
